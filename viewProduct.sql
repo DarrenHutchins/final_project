@@ -1,0 +1,1 @@
+select * from Sky_UpCycle.Product
