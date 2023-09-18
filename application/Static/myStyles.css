@@ -17,7 +17,9 @@ nav {
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url (https://github.com/DarrenHutchins/final_project/application/Images/Backgroundimage.png);
+    background-position: center;
 }
 
 #aquamarinePara {
@@ -28,9 +30,4 @@ body {
 .pinkClass {
     color: gray;
 
-}
-
-body {
-    background-image:url(www.github.com/DarrenHutchins/final_project/application/Images/Backgroundimage.png);
-    background-position: center;
 }
