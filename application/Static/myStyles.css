@@ -7,7 +7,7 @@ h1 {
 p {
     color: rgb(85, 0, 255);
     font-size: 18px;
-    font: veranda, sans-serif;
+    font: Verdana, sans-serif;
     padding: 20px;
     text-align: left;
 }
@@ -31,7 +31,6 @@ body {
 }
 
 body {
-    background-color: lightgrey;
-    background-image:url(https://github.com/DarrenHutchins/final_project/application/Images/Backgroundimage.png);
-    background-position: centre;
+    background-image:url(www.github.com/DarrenHutchins/final_project/application/Images/Backgroundimage.png);
+    background-position: center;
 }
