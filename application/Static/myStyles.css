@@ -7,7 +7,7 @@ h1 {
 p {
     color: rgb(85, 0, 255);
     font-size: 18px;
-    font: veranda, sans-serif;
+    font: Verdana, sans-serif;
     padding: 20px;
     text-align: left;
 }
@@ -17,19 +17,16 @@ nav {
 }
 
 body {
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-image: url('https://github.com/DarrenHutchins/final_project/application/Images/Backgroundimage.png');
+    background-position: center;
 }
 
-#aquamarinePara {
-
-    color: aquamarine
+#aquamarinePara { 
+    color: aquamarine;
 }
 
 .pinkClass {
     color: gray;
 
-}
-
-body {
-    background-color: lightgrey
 }
