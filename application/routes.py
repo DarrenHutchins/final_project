@@ -11,8 +11,28 @@ def connect_db():
 
 @app.route('/')
 def home():
-    """Landing page. Showing Actors    """
+    """Home Page """
 
     return render_template(
                 'home.html'
     )
+
+@app.route('/WhatWeDo?')
+def whatWeDo():
+    return render_template('Visit_journey.html')
+
+@app.route('/Services')
+def services():
+    return render_template('What_we_do.html')
+
+
+@app.route('/Youraccount')
+def account():
+    return render_template('Login.html')
+
+@app.route('/Sky0')
+def sky0():
+    return render_template('Sky0.html')
+
+
+
