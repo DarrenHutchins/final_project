@@ -6,11 +6,25 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
         integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
         crossorigin="anonymous"></script>
-    <title> Log In Page
-    </title>
-    <link rel="stylesheet" href="myStyles.css" />
+    
+        <title> Log In Page</title>
+    
+        <link rel="stylesheet" href="myStyles.css"/>
 
+
+        <style>
+            /* Center the containers vertically */
+            .container {
+                width: 100%;
+                height: 30vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column; /* Optional: Center elements vertically */
+            }
+        </style>
 </head>
+
 
 <body>
 <nav class="navbar navbar-expand-lg bg-body-tertiary">
@@ -54,132 +68,98 @@
             </form>
         </div>
     </div>
-</nav>
+</nav>          
 
-i
-
-
-                
-            </div>
-        </div>
-
-    </nav>
-
-
-
-    <form action="action_form" style="border:1px solid #ccc">
-        <div class="container">
-          
-          <p>Please fill in this form to create an account.</p>
-      
-          <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email" required>
-      
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
-      
-          <label for="psw-repeat"><b>Repeat Password</b></label>
-          <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
-      
-          <label>
-            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-          </label>
-      
-          <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
-      
-          <div class="clearfix">
-            <button type="button" class="cancelbtn">Cancel</button>
-            <button type="submit" class="signupbtn">Sign Up</button>
-            
-          </div>
-        </div>
-      </form>
       <hr>
-      <form action="action_form" style="border:1px solid #ccc">
-        <div class="container">
-          
-          <p>Exising users log in here</p>
-          <label for="email"><b>Email</b></label>
-          <input type="text" placeholder="Enter Email" name="email" required>
-      
-          <label for="psw"><b>Password</b></label>
-          <input type="password" placeholder="Enter Password" name="psw" required>
-      
-          <label>
-            <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
-          </label>
-      
-          <div class="clearfix">
-            <button type="button" class="cancelbtn">Cancel</button>
-            <button type="submit" class="loginbtn">LogIn</button>
-            <hr>
-          </div>
-        </div>
-      </form>
+     
+      <!-- New Customer Registration Form -->
+      <div class="container">
+          <form action="action_form" style="border: 1px solid #ccc; padding: 20px;">
+              <h2 style="color: dodgerblue;">New customers create an account</h2>
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email" name="email" required>
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+              <label for="psw-repeat"><b>Repeat Password</b></label>
+              <input type="password" placeholder="Repeat Password" name="psw-repeat" required>
+              <label>
+                  <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+              </label>
+              <p>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+              <div class="clearfix">
+                  <button type="button" class="cancelbtn">Cancel</button>
+                  <button type="submit" class="signupbtn">Sign Up</button>
+              </div>
+          </form>
+      </div>
 
+      <hr>
+
+      <!-- Existing User Login Form -->
+      <div class="container">
+          <form action="action_form" style="border: 1px solid #ccc; padding: 20px;">
+              <h2 style="color: dodgerblue;">Existing users log in here</h2>
+              <label for="email"><b>Email</b></label>
+              <input type="text" placeholder="Enter Email Address" name="email" required>
+              <label for="psw"><b>Password</b></label>
+              <input type="password" placeholder="Enter Password" name="psw" required>
+              <label>
+                  <input type="checkbox" checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+              </label>
+              <div class="clearfix">
+                  <button type="button" class="cancelbtn">Cancel</button>
+                  <button type="submit" class="loginbtn">Log In</button>
+              </div>
+          </form>
+      </div>
+
+<!--div style for centring table -->
+<div style="display: flex; justify-content: center; align-items: center; height: 50vh;">
+<!--Table tags, tr= table row, td= table data, th=table header -->
     <table>
+        
         <tr>
-            
-        </tr>
-        <tr>
-            <td>1.SKY
-                <a href= http://www.sky.com> Link for SKY</a>
-            </td>
-
+            <td>SKY<a href="http://www.sky.com">Link for SKY</a></td>
         </tr>
 
         <tr>
-            <td>2.Gaming
-                <a
-                    href="https://en.wikipedia.org/wiki/History_of_video_games#:~:text=The%20history%20of%20video%20games,games%20on%20a%20video%20display.">Link
+            <td>Gaming<a href="https://en.wikipedia.org/wiki/History_of_video_games#:~:text=The%20history%20of%20video%20games,games%20on%20a%20video%20display.">Link
                     to wikipedia for the history of Gaming</a>
             </td>
         </tr>
+            <td>Guinness<a href="https://www.guinness.com/en-gb">Link for Guinness website</a></td>
+        </tr>
 
         <tr>
-            <td>3.Guinness
-                <a href="https://www.guinness.com/en-gb">Link for Guinness website</a>
-
-            </td>
-
+            <td>Food <a href="https://www.nationalrestaurantawards.co.uk/">Link to Top 100 resturants in the UK</a></td>
         </tr>
+
         <tr>
-
-            <td>4.spending time with the wife</td>
+            <td><a href="https://www.dummies.com/article/technology/programming-web-design/general-programming-web-design/github-for-dummies-cheat-sheet-261928/"> Github for Dummies</a></td>
         </tr>
-        <tr>
 
-            <td>5.Food
-                <a href="https://www.nationalrestaurantawards.co.uk/">Link to Top 100 resturants in the UK</a>
-
-            </td>
-        </tr>
     </table>
 
-    <nav>
-        <h3> <a href="https://www.dummies.com/article/technology/programming-web-design/general-programming-web-design/github-for-dummies-cheat-sheet-261928/"> For all your help on github issues </a> </h3>
-    </nav>
-
-    <!--Table tags are as follows tr= table row td= table data th=table headder -->
-    <tr>
-        
-
-    </tr>
-    
-
+</div>
+</body>   
 <hr>
- <footer align = "center"> Made By The Codewizards &copy;</footer>
- <style>
+
+<footer align = "center"> Made By The Codewizards &copy;</footer>
+<style>
     .center-text {
         text-align: center;
         font-size: 12px; /* Adjust the font size to your preference */
     }
 </style>
+
 <p class="center-text">This document was last modified: <span id="demo"></span></p>
 <script>
     let text = document.lastModified;
     document.getElementById("demo").innerHTML = text;
 </script>
-</body>
+    
+    
+
+
 
 </html>
