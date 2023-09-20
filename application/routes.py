@@ -1,8 +1,6 @@
 from application import app
-from application.forms import BasicForm
 from flask import render_template, request, g, flash,redirect, url_for
 import pymysql
-
 def connect_db():
     return pymysql.connect(
         user = 'root', password = 'password', database = 'sakila',
@@ -18,7 +16,7 @@ def home():
     )
 
 @app.route('/WhatWeDo?')
-def whatWeDo():
+def whatweDo():
     return render_template('Visit_journey.html')
 
 @app.route('/Services')

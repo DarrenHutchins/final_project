@@ -2,3 +2,5 @@ flask
 pymysql
 Flask-WTF
 cryptography
+flask-HTTPAUTH
+Flask-Bootstrap4
