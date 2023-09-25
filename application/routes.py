@@ -21,7 +21,7 @@ def services():
     return render_template('skyupcycle.html')
 
 
-@app.route('/Login')
+@app.route('/LogIn')
 def account():
     return render_template('LogIn.html')
 

@@ -3,135 +3,88 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
-        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
-        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Diphylleia&display=swap" rel="stylesheet">
- <link rel="stylesheet" href="{{url_for('static', filename='myStyles.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='myStyles.css')}}">
+
     <title>Welcome To SkyUpcycle!</title>
-
-
 
 </head>
 
+<body>
+    {% include 'navigation.html' %}
 
-
-
-<body style="background-color: black;">
-{% include 'navigation.html' %}
-<header class="hero text-white text-center py-5"> <img src="{{url_for('static', filename='Backgroundimage.png')}}" alt="logo" width="75%" height="50%">
+    <header class="hero text-white text-center py-5">
+        <img src="{{url_for('static', filename='Backgroundimage.png')}}" alt="logo">
         <div class="container">
             <h1 class="display-4">Welcome to SkyUpcycle!</h1>
             <p class="lead">Discover our mission and services.</p>
-            <a href="sky0.html" class="btn btn-light btn-lg">Sky 0</a>
-            <a href="What_we_do.html" class="btn btn-light btn-lg">Services</a>
+            <a href="https://www.skyzero.sky/" class="btn btn-light btn-lg">Sky 0</a>
+            <a href="skyupcycle" class="btn btn-light btn-lg">Services</a>
         </div>
     </header>
 
-    <!-- Feature Cards Section -->
-<section class="features my-5">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-4 mb-4">
-                <div class="card">
-                    <img src="{{url_for('static', filename='Sky_Zero_Imagery.jpg')}}" alt="sky0logo" class="card-img-top img-fluid">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Our Mission</h5>
-                        <p class="card-text">Our mission is to make OUR world a better place by going net zero carbon by 2034, with YOUR help we can achieve this</p>
-                        <a href="sky0.html" class="btn btn-primary btn-lg">Sky 0</a> <!-- Changed btn-light to btn-primary -->
+    <section class="features my-5">
+        <div class="container">
+            <div class="row">
+                <!-- Card 1 -->
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="{{url_for('static', filename='Sky_Zero_Imagery.jpg')}}" alt="sky0logo" class="card-img-top img-fluid">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Our Mission</h5>
+                            <p class="card-text">Our mission is to make OUR world a better place by going net zero carbon by 2034, with YOUR help we can achieve this</p>
+                            <a href="https://www.skyzero.sky/" class="btn btn-primary btn-lg">Sky 0</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 mb-4">
-                <div class="card">
-                    <img src="{{url_for('static', filename='SkyEngineer.jpg')}}" alt="SkyEngineer" class="card-img-top img-fluid">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Our Service</h5>
-                        <p class="card-text">Our new service is here to remove and recycle any old sky equipment from your home by your trusted local Sky engineer...</p>
-                        <a href="What_we_do.html" class="btn btn-primary btn-lg">Learn More</a> <!-- Changed btn-light to btn-primary -->
+
+                <!-- Card 2 -->
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="{{url_for('static', filename='SkyEngineer.jpg')}}" alt="SkyEngineer" class="card-img-top img-fluid">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Our Service</h5>
+                            <p class="card-text">Our new service is here to remove and recycle any old sky equipment from your home by your trusted local Sky engineer...</p>
+                            <a href="skyupcycle" class="btn btn-primary btn-lg">Learn More</a>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-lg-4 mb-4">
-                <div class="card">
-                    <img src="{{url_for('static', filename='SkyLogo.png')}}" alt="skylogo" class="card-img-top img-fluid">
-                    <div class="card-body text-center">
-                        <h5 class="card-title">Why Wait?</h5>
-                        <p class="card-text">Simply create an account, tell us a few details about your property, choose a date, and get a quote. DONE. It couldn't be easier.</p>
-                        <a href="Login.html" class="btn btn-primary btn-lg">Book Now</a> <!-- Changed btn-light to btn-primary -->
+
+                <!-- Card 3 -->
+                <div class="col-lg-4 mb-4">
+                    <div class="card">
+                        <img src="{{url_for('static', filename='SkyLogo.png')}}" alt="skylogo" class="card-img-top img-fluid">
+                        <div class="card-body text-center">
+                            <h5 class="card-title">Why Wait?</h5>
+                            <p class="card-text">Simply create an account, tell us a few details about your property, choose a date, and get a quote. DONE. It couldn't be easier.</p>
+                            <a href="LogIn" class="btn btn-primary btn-lg">Book Now</a>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
-</section>
+    </section>
 
+    <section>
+        <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/DkkE7sefjIE?si=RRW7jvsgSzOgpWW5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+        </div>
+    </section>
 
+    <section>
+        <div class="bottom-banner" style="background-image: url('https://static.skyassets.com/contentstack/assets/blt143e20b03d72047e/blt2bce49a94e64a5af/64ca6ec533255906da192677/SOS_x_Sky_Glass_Flash_Sale_CHP_Desktop_v5.png'); background-size: cover; height: 300px;"></div>
+    </section>
 
-
-<section>
-        <style>
-        <style>
-        style {
-            margin: 0;
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            min-height: 100vh;
-        }
-
-        .video-container {
-            text-align: center;
-        }
-
-        iframe {
-            max-width: 100%;
-        }
-    </style>
-     <div class="video-container">
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/DkkE7sefjIE?si=RRW7jvsgSzOgpWW5" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
-    </div>
-
-
-
-</section>
-
-<section>
-    <div class="bottom-banner" style="background-image: url('https://static.skyassets.com/contentstack/assets/blt143e20b03d72047e/blt2bce49a94e64a5af/64ca6ec533255906da192677/SOS_x_Sky_Glass_Flash_Sale_CHP_Desktop_v5.png'); background-size: cover; height: 300px;"></div>
-</section>
-
-<hr>
- <footer align = "center"> Made By The Codewizards &copy;</footer>
- <style>
-    .center-text {
-        text-align: center;
-        font-size: 12px; /* Adjust the font size to your preference */
-    }
-</style>
-<p class="center-text">This document was last modified: <span id="demo"></span></p>
-<script>
-    let text = document.lastModified;
-    document.getElementById("demo").innerHTML = text;
-</script>
-
-
+    <hr>
+    <footer align="center"> Made By The Codewizards &copy;</footer>
+    <p class="center-text">This document was last modified: <span id="demo"></span></p>
+    <script>
+        let text = document.lastModified;
+        document.getElementById("demo").innerHTML = text;
+    </script>
 </body>
-
-
-
-
-
-
-
-
-
-
-
-
 </html>
