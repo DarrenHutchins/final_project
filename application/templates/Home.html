@@ -24,56 +24,7 @@
 
 
 <body style="background-color: black;">
-    <div class="bg-animation">
-        <div id="stars"></div>
-        <div id="stars2"></div>
-        <div id="stars3"></div>
-        <div id="stars4"></div>
-    </div>
-
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
-    <div class="container-fluid">
-        <a class="navbar-brand" href="Home.html">
-            <img src="{{url_for('static', filename='icon image.ico')}}" alt="Logo" width="50" height="50">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarScroll"
-            aria-controls="navbarScroll" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarScroll">
-            <ul class="navbar-nav me-auto my-2 my-lg-0 navbar-nav-scroll" style="--bs-scroll-height: 100px;">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/Home">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/Visit_journey">What to expect?</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="/What_we_do">Services</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="/Login">Your Account</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                        aria-expanded="false">
-                        More
-                    </a>
-                    <ul class="dropdown-menu">
-                        <li><a class="dropdown-item" href="/Sky0">Sky 0</a></li>
-                        <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="https://www.sky.com/">Sky.com</a></li>
-                    </ul>
-                </li>
-            </ul>
-            <form class="d-flex" role="search" action="https://www.google.com/search" method="GET">
-                <input class="form-control me-2" type="search" placeholder="Search Google" aria-label="Search" name="q">
-                <button class="btn btn-outline-success" type="submit">Search</button>
-            </form>
-        </div>
-    </div>
-</nav>
-
+{% include 'navigation.html' %}
 <header class="hero text-white text-center py-5"> <img src="{{url_for('static', filename='Backgroundimage.png')}}" alt="logo" width="75%" height="50%">
         <div class="container">
             <h1 class="display-4">Welcome to SkyUpcycle!</h1>

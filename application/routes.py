@@ -8,6 +8,7 @@ def connect_db():
         cursorclass = pymysql.cursors.DictCursor)
 
 @app.route('/')
+@app.route('/Home')
 def home():
     """Home Page """
 
@@ -15,22 +16,14 @@ def home():
                 'home.html'
     )
 
-@app.route('/WhatWeDo?')
-def whatweDo():
-    return render_template('Visit_journey.html')
-
-@app.route('/Services')
+@app.route('/skyupcycle')
 def services():
-    return render_template('What_we_do.html')
+    return render_template('skyupcycle.html')
 
 
-@app.route('/Youraccount')
+@app.route('/Login')
 def account():
-    return render_template('Login.html')
-
-@app.route('/Sky0')
-def sky0():
-    return render_template('Sky0.html')
+    return render_template('LogIn.html')
 
 
 

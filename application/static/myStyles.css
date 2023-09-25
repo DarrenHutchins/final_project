@@ -111,8 +111,43 @@ footer {
     }
 }
 
+/*carasel style */
+/* Create a grid container for the layout */
+.grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr; /* Two equal-width columns */
+    gap: 5px; /* Adjust the gap as needed */
+    justify-items: center; /* Center content horizontally within each column */
+    align-items: center; /* Center content vertically within each column */
+}
+
+/* Style the left column (carousel) */
+.left-column {
+    max-width: 100%; /* Set the maximum width to use the available space */
+    width: 100%; /* Ensure the left column takes the entire width */
+    text-align: center; /* Center text horizontally within the left column */
+}
+
+/* Style the right column (YouTube video) */
+.right-column {
+    max-width: 95%; /* Set the maximum width to use the available space */
+    width: 95%; /* Ensure the right column takes the entire width */
+    text-align: center; /* Center text horizontally within the right column */
+}
+
+/* Set a maximum height for the carousel images to maintain aspect ratio */
+.carousel img {
+    max-width: 100%;
+    height: 400px; /* Adjust this value to control the image height */
+    object-fit: cover; /* Maintain aspect ratio and cover the entire container */
+}
+
+background-color: #e5e5f7;
+opacity: 0.8;
+background-image:  repeating-radial-gradient( circle at 0 0, transparent 0, #e5e5f7 10px ), repeating-linear-gradient( #45f75255, #45f752 );
+
 /* Backgroud Styling */
-.full-wh {
+/*.full-wh {
             position: absolute;
             top: 0px;
             left: 0px;
@@ -255,5 +290,5 @@ footer {
             to {
                 transform: translateY(-2000px);
             }
-        }
+        }/*
 
