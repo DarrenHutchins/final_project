@@ -1,0 +1,1 @@
+delete from Sky_UpCycle.Customer_id where Customer_id =2
